@@ -1,11 +1,3 @@
 .content li {
     margin-bottom: 20px;
 }
-
-body,
-html {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background: linear-gradient(180deg, #FFFFFF 0%, #CFCFCF 100%) !important;
-}
