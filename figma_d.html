@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/figma_d.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <script src="js/swiper-bundle.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <a href="figma.html">
+                <li>Back</li>
+            </a>
+            <a href="#">
+                <li>Description</li>
+            </a>
+            <a href=" https://cindy-mp-2020.github.io/Hackathon-Jan23/">
+                <li style="color: #7f7cff;">Try It Out!</li>
+            </a>
+        </ul>
+    </div>
+    <div class="content">
+        <!-- <div class="left"></div>
+        <div class="right"></div> -->
+        <div class="display">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-color: transparent;">
+                        <ul>
+                            <li><img src="img/figma/Index.jpg" alt="" width="400px"></li>
+                            <li class="loginPage">
+                                <ul>
+                                    <li><img src="img/figma/Login.png" alt="" width="300px"></li>
+                                    <li><img src="img/figma/Sign up.png" alt="" width="300px"></li>
+                                    <li><img src="img/figma/Profile setting.png" alt="" width="300px"></li>
+                                </ul>
+                            </li>
+                            <li><img src="img/figma/Profile.jpg" alt="" width="370px"></li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide" style="background-color: transparent;">
+                        <ul>
+                            <li><img src="img/figma/carbon emission calculator 1.png" alt="" height="900px"></li>
+                            <li><img src="img/figma/Count Your Carbon.jpg" alt="" width="450px"></li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide" style="background-color: transparent;">
+                        <ul>
+                            <li><img src="img/figma/Delivery service.jpg" alt="" width="400px"></li>
+                            <li><img src="img/figma/Info page.jpg" alt="" width="400px"></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Initialize Swiper -->
+    <script>
+        (function() {
+            var swiper = new Swiper('.swiper-container', {
+                speed: 1000,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        })();
+    </script>
+</body>
+
+</html>
