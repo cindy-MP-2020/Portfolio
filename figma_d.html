@@ -19,7 +19,7 @@
                 <li>Back</li>
             </a>
             <a href="#">
-                <li>Description</li>
+                <li class="detail">Description</li>
             </a>
             <a href=" https://cindy-mp-2020.github.io/Hackathon-Jan23/">
                 <li style="color: #7f7cff;">Try It Out!</li>
@@ -76,6 +76,10 @@
                 },
             });
         })();
+        var description = document.querySelector('.detail');
+        description.addEventListener('click', function() {
+            alert("Sky's The Limit tackles the pervasiveness of climate change by offering users the ability to buy plant based produce, while engaging in eco-friendly activities like social distancing cleanups. Additionally, our unique star points system grants discounts in our marketplace where companies can advertise services, products and discounts, acting as an incentive for users to be environmentally aware about their daily choices.")
+        })
     </script>
 </body>
 
