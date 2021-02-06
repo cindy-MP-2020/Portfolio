@@ -7,12 +7,15 @@ html {
 }
 
 .list li {
-    display: block;
-    width: 400px;
-    height: 300px;
+    display: inline-block;
+    width: 300px;
+    height: 250px;
     overflow: hidden;
-    border-radius: 10px;
     transition: 0.3s;
+}
+
+.list li img {
+    border-radius: 10px;
 }
 
 .list li:hover {
