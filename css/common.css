@@ -57,3 +57,7 @@ html {
 .back_icon {
     font-family: 'icomoon';
 }
+
+.pointer {
+    cursor: pointer;
+}

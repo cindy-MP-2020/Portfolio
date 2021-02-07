@@ -19,14 +19,11 @@
             <a href="figma.html">
                 <li>Back</li>
             </a>
-            <a href="#">
-                <li class="detail">Description</li>
+            <a>
+                <li class="detail pointer">Description</li>
             </a>
             <a href=" https://www.figma.com/file/xHaHPIhQn1uoU2QnCyua2K/Untitled?node-id=6%3A568">
                 <li style="color: #7f7cff;">Figma Link</li>
-            </a>
-            <a href="#">
-                <li style="color: #7f7cff;">Try it out!</li>
             </a>
         </ul>
     </div>
@@ -76,6 +73,10 @@
                 },
             });
         })();
+        var description = document.querySelector('.detail');
+        description.addEventListener('click', function() {
+            alert("This is a mobile platform that allows members of the community to find local nonprofit volunteering opportunities that cater toward their interests and the needs of the nonprofits")
+        })
     </script>
 </body>
 
