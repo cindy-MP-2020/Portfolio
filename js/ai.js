@@ -17,7 +17,7 @@ window.onload = function() {
         aLi[i].index = i;
         aLi[i].onclick = function() {
             with(oFrame.style) { display = 'block', top = this.offsetTop + 'px', left = this.offsetLeft + 'px', width = this.offsetWidth + 'px', height = this.offsetHeight + 'px'; }
-            oFrame.innerHTML = '<img src="img/ai/' + (this.index + 1) + '.PNG" />';
+            oFrame.innerHTML = '<img src="img/ai/' + (this.index + 1) + '.png" />';
             var oImg = oFrame.getElementsByTagName('img')[0];
             var iWidth = oImg.width;
             var iHeight = oImg.height;
