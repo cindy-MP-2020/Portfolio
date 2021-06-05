@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <input type="file" name="fileString" multiple class="file">   
+    <script>
+
+        $("input[name=fileString]").change(function() {
+            //var names = [];
+			
+            for (var i = 0; i < $(this).get(0).files.length; ++i) {
+               // names.push($(this).get(0).files[i].name);
+				//console.log($(this).get(0).files[i].mozFullPath);
+				//方式一：
+				var filePath = $(this).val();
+				console.log(filePath);
+				//方式二：
+				alert($('input[type=file]').val());
+            }
+            //console.log(names);
+			//方式三：
+			alert($("input[name=fileString]").val());
+        })
+    </script>
+</body>
+</html>

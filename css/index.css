@@ -1,0 +1,55 @@
+.content, 
+.nav{
+    transition: 1.5s;
+}
+
+.content img {
+    padding-left: 20px;
+    margin-top: 50px;
+    width: 1000px
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(180deg, #FFFFFF 0%, #CFCFCF 100%) !important;
+}
+
+/*开机动画*/
+
+.mask {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    z-index: 9999;
+}
+
+.mask .up {
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(#a4a2fc, #7b72f1);
+    transition: 1s height;
+}
+
+.mask .down {
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(#7b72f1, #a4a2fc);
+    transition: 1s height;
+    position: absolute;
+    bottom: 0;
+}
+
+.mask .line {
+    height: 4px;
+    width: 0%;
+    background: linear-gradient(to Right,#1d11c2, #42c9c2, #d04ff0);
+    position: absolute;
+    z-index: 999999999;
+    left: 0;
+    top: 50%;
+    margin-top: -2px;
+    transition: 1s;
+}

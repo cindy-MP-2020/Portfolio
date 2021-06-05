@@ -1,0 +1,8 @@
+开机添加loading文字
+
+1. Create a AE section，deploy the animation onto the website
+2. Translation: English/Chinese
+3. Able to swipe the image left and right
+4. Compatible on all devices
+5. light/dark mode
+6. add C4D section inside 3D modeling

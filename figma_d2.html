@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/figma_d.css">
+    <link rel="stylesheet" href="css/figma_d2.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <script src="js/swiper-bundle.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <a href="figma.html">
+                <li>Back</li>
+            </a>
+            <a>
+                <li class="detail pointer">Description</li>
+            </a>
+            <a href=" https://www.figma.com/file/xHaHPIhQn1uoU2QnCyua2K/Untitled?node-id=6%3A568">
+                <li style="color: #7f7cff;">Figma Link</li>
+            </a>
+        </ul>
+    </div>
+    <div class="content">
+        <!-- <div class="left"></div>
+        <div class="right"></div> -->
+        <div class="display">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-color: transparent;">
+                        <ul>
+                            <li><img src="img/figma/f1.jpg" alt="" width="350px"></li>
+                            <li class="loginPage">
+                                <img src="img/figma/f2.jpg" alt="" width="350px"></li>
+                            </li>
+                            <li><img src="img/figma/f3.jpg" alt="" width="350px"></li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide" style="background-color: transparent;">
+                        <ul>
+                            <li class="middle1"><img src="img/figma/f4.jpg" alt="" width="450px"></li>
+                            <li class="middle2"><img src="img/figma/f5.jpg" alt="" width="450px"></li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide" style="background-color: transparent;">
+                        <ul>
+                            <li><img src="img/figma/f6.jpg" alt="" width="400px"></li>
+                            <li><img src="img/figma/f7.jpg" alt="" width="400px"></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Initialize Swiper -->
+    <script>
+        (function() {
+            var swiper = new Swiper('.swiper-container', {
+                speed: 1000,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        })();
+        var description = document.querySelector('.detail');
+        description.addEventListener('click', function() {
+            alert("This is a mobile platform that allows members of the community to find local nonprofit volunteering opportunities that cater toward their interests and the needs of the nonprofits")
+        })
+    </script>
+</body>
+
+</html>
