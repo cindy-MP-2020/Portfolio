@@ -54,6 +54,6 @@ html {
     transition: 1s;
 }
 #anim {
-    width: 800px;
-    margin: 400px;
+    max-width: 800px;
+    margin-top: 400px;
 }
