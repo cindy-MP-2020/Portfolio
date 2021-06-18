@@ -7,24 +7,14 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
-    <script src="lottie.js"></script>
-    <script src="js/index.js"></script>
     <title>Cindy's Portfolio</title>
 </head>
 
 <body>
         <div class="wrap">
-            <!-- 流体布局 -->
-            <div class="mask">
-                <div class="up">
-                </div>
-                <div class="down"></div>
-                <span class="line"></span>
-            </div>
             <div class="content">
                 <img src="img/others/home.png" alt="">
             </div>
-            <div id="anim"></div>
             <div class="nav">
                 <ul>
                     <a href="figma.html" class="page">
@@ -42,63 +32,6 @@
                 </ul>
             </div>
         </div>
-    <script>
-
-        //开机页面
-        var line = document.querySelector(".mask .line")
-        var mians = document.querySelectorAll(".mask div")
-        var mask = document.querySelectorAll(".mask")
-        var parentMask = document.querySelector(".wrap");
-        var mask1 = document.querySelector(".mask")
-        var pages = document.querySelectorAll(".page")
-
-        loadingAn()
-        function loadingAn() {
-            var arr = ['carbon emission calculator 1.JPG', 'Count Your Carbon.JPG', 'Delivery service.JPG', 'f1.JPG', 'f2.JPG', 'f3.JPG', 'f4.JPG', 'f5.JPG', 'f6.JPG', 'f7.JPG', 'Index.JPG', 'Info page.JPG', 'Login.JPG', 'Profile setting.JPG', 'Sign up.JPG'];
-            var flag = 0;
-            for (var i = 0; i < arr.length; i++) {
-                var img = new Image();
-                img.src = 'img/figma/' + arr[i];
-                img.onload = function() {
-                    flag++
-                    line.style.width = flag / arr.length * 100 + "%"
-                }
-                line.addEventListener("transitionend", function() {
-                    if (flag === arr.length) {
-                        for (var i = 0; i < mians.length; i++) {
-                            mians[i].style.height = 0 + "px";
-                        }
-                        this.style.display = "none";
-                    }
-                })
-                mians[0].addEventListener("transitionend", function() {
-                    parentMask.removeChild(mask1);
-                })
-            }
-        }
-
-        //首页动画
-        inAn = function() {
-                    var content = document.querySelector(".content");
-                    var nav = document.querySelector(".nav");
-                    content.style.transform = "translateY(0px)";
-                    nav.style.transform = "translateY(0px)";
-                    content.style.opacity = 1;
-                    nav.style.opacity = 1;
-                }
-        outAn = function() {
-                    var content = document.querySelector(".content");
-                    var nav = document.querySelector(".nav");
-                    content.style.transform = "translateY(-400px)";
-                    nav.style.transform = "translateY(100px)";
-                    content.style.opacity = 0;
-                    nav.style.opacity = 0;
-                }
-        outAn()
-        setTimeout(function() {
-                inAn();
-            }, 2000)        
-    </script>
 </body>
 
 </html>
