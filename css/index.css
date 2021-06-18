@@ -53,3 +53,7 @@ html {
     margin-top: -2px;
     transition: 1s;
 }
+
+#anim {
+    width: 200px;
+}
